@@ -46,7 +46,6 @@ emitter.emitActionEvent({
 
 #### emitter.emitCountEvent
 - 上报计数事件
-- 上报用户行为事件
 ```js
 import { emitter } from 'skytower';
 
