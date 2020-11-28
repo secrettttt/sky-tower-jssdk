@@ -13,6 +13,10 @@ npm install skytower
 ### init方法
 - 初始化SkyTower
 - 参数：项目id、标识独立用户的uid
+| 字段名 | 类型 | 含义 | 枚举值/如何获取 |
+| :-----| :---- | :---- | :---- |
+| pid | string | 项目id/页面id | SkyTower监控平台上创建项目后得到的project_id |
+| uid | string | 区分不同的用户，用户统计uv，追查问题 | 用户自定义 |
 ```js
 import { init } from 'skytower';
 
@@ -25,6 +29,21 @@ init({
 ### emitter对象
 #### emitter.emitActionEvent
 - 上报用户行为事件
+| 字段名 | 类型 | 含义 | 枚举值/示例 |
+| :-----| :---- | :---- | :---- |
+| event | string | 事件名称 | 'click_bottom_button' |
+| location | string | 地理位置 | '北京市海淀区' |
+| device_brand | string | 机型 | 'XIAO MI' |
+| app_version | string | 页面版本号 | '8.2.5' |
+| system_version | string | 系统版本号 | '9.2.0' |
+| client | string | 客户端类型 | 'Android' |
+| net_type | string | 网络类型 | '4G' |
+| ip_address | string | ip地址 | '10.157.168.235' |
+| extra | object | 自定义参数 | {  env: 'dev' } |
+| type | string | 事件类型（自动上报，不需要手动传） | 'action' |
+| time | number | 时间id（自动上报，不需要手动传） | 1606497817532 |
+| pid | string | 项目id（自动上报，不需要手动传） | '987456' |
+| uid | string | 用户id（自动上报，不需要手动传） | '16678923465' |
 ```js
 import { emitter } from 'skytower';
 
@@ -46,6 +65,13 @@ emitter.emitActionEvent({
 
 #### emitter.emitCountEvent
 - 上报计数事件
+| 字段名 | 类型 | 含义 | 枚举值/示例 |
+| :-----| :---- | :---- | :---- |
+| event | string | 事件名称 | 'image_upload' |
+| type | string | 事件类型（自动上报，不需要手动传） | 'count' |
+| time | number | 项目id（自动上报，不需要手动传） | 1606497817532 |
+| pid | string | 项目id（自动上报，不需要手动传） | '987456' |
+| uid | string | 用户id（自动上报，不需要手动传） | '16678923465' |
 ```js
 import { emitter } from 'skytower';
 
@@ -54,6 +80,15 @@ emitter.emitCountEvent('image_upload');
 
 #### emitter.emitReqEvent
 - 上报请求事件
+| 字段名 | 类型 | 含义 | 枚举值/示例 |
+| :-----| :---- | :---- | :---- |
+| api | string | 接口地址 | 'xxx/getUserInfo' |
+| query | string | get请求参数 | 'user_id=987234&&user_name=secretttt&&user_type=vip' |
+| request_body | string | post请求参数 | '{"user_id": "987234", "user_name": "secretttt", "user_type": "vip"}' |
+| type | string | 事件类型（自动上报，不需要手动传） | 'req' |
+| time | number | 项目id（自动上报，不需要手动传） | 1606497817532 |
+| pid | string | 项目id（自动上报，不需要手动传） | '987456' |
+| uid | string | 用户id（自动上报，不需要手动传） | '16678923465' |
 ```js
 import { emitter } from 'skytower';
 
@@ -69,6 +104,20 @@ emitter.emitReqEvent({
 ```
 
 #### emitter.emitRespEvent
+- 上报响应事件
+| 字段名 | 类型 | 含义 | 枚举值/示例 |
+| :-----| :---- | :---- | :---- |
+| isSuccess | boolean | 成功 | false |
+| isError | boolean | 失败 | false |
+| api | string | 接口地址 | 'xxx/getUserInfo' |
+| resp | object | 返回参数 | {
+      err_no: 0,
+      err_msg: 'success'
+} |
+| type | string | 事件类型（自动上报，不需要手动传） | 'resp' |
+| time | number | 项目id（自动上报，不需要手动传） | 1606497817532 |
+| pid | string | 项目id（自动上报，不需要手动传） | '987456' |
+| uid | string | 用户id（自动上报，不需要手动传） | '16678923465' |
 ```js
 import { emitter } from 'skytower';
 
