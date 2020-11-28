@@ -104,10 +104,7 @@ emitter.emitReqEvent({
 | isSuccess | boolean | 成功 | false |
 | isError | boolean | 失败 | false |
 | api | string | 接口地址 | 'xxx/getUserInfo' |
-| resp | object | 返回参数 | '{
-      err_no: 0,
-      err_msg: 'success'
-}' |
+| resp | object | 返回参数 | '{ err_no: 0, err_msg: 'success'}' |
 | type | string | 事件类型（自动上报，不需要手动传） | 'resp' |
 | time | number | 项目id（自动上报，不需要手动传） | 1606497817532 |
 | pid | string | 项目id（自动上报，不需要手动传） | '987456' |
