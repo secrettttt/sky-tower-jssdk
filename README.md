@@ -10,9 +10,7 @@
 npm install skytower
 ```
 
-### init方法
-- 初始化SkyTower
-- 参数：项目id、标识独立用户的uid
+### init方法 初始化SkyTower
 | 字段名 | 类型 | 含义 | 枚举值/如何获取 |
 | :-----| :---- | :---- | :---- |
 | pid | string | 项目id/页面id | SkyTower监控平台上创建项目后得到的project_id |
@@ -27,7 +25,7 @@ init({
 });
 ```
 ### emitter对象
-#### emitter.emitActionEvent
+#### emitter.emitActionEvent 上报用户行为事件
 | 字段名 | 类型 | 含义 | 枚举值/示例 |
 | :-----| :---- | :---- | :---- |
 | event | string | 事件名称 | 'click_bottom_button' |
@@ -62,8 +60,7 @@ emitter.emitActionEvent({
 });
 ```
 
-#### emitter.emitCountEvent
-- 上报计数事件
+#### emitter.emitCountEvent 上报计数事件
 | 字段名 | 类型 | 含义 | 枚举值/示例 |
 | :-----| :---- | :---- | :---- |
 | event | string | 事件名称 | 'image_upload' |
@@ -77,8 +74,7 @@ import { emitter } from 'skytower';
 emitter.emitCountEvent('image_upload');
 ```
 
-#### emitter.emitReqEvent
-- 上报请求事件
+#### emitter.emitReqEvent 上报请求事件
 | 字段名 | 类型 | 含义 | 枚举值/示例 |
 | :-----| :---- | :---- | :---- |
 | api | string | 接口地址 | 'xxx/getUserInfo' |
@@ -102,8 +98,7 @@ emitter.emitReqEvent({
 });
 ```
 
-#### emitter.emitRespEvent
-- 上报响应事件
+#### emitter.emitRespEvent 上报响应事件
 | 字段名 | 类型 | 含义 | 枚举值/示例 |
 | :-----| :---- | :---- | :---- |
 | isSuccess | boolean | 成功 | false |
