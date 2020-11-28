@@ -28,7 +28,6 @@ init({
 ```
 ### emitter对象
 #### emitter.emitActionEvent
-- 上报用户行为事件
 | 字段名 | 类型 | 含义 | 枚举值/示例 |
 | :-----| :---- | :---- | :---- |
 | event | string | 事件名称 | 'click_bottom_button' |
