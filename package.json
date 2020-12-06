@@ -1,0 +1,19 @@
+{
+  "name": "sky-tower",
+  "version": "0.0.6",
+  "description": "It is skytower jssdk.",
+  "main": "./src/index.js",
+  "keywords": [
+    "skytower",
+    "jssdk",
+    "event",
+    "action",
+    "respond",
+    "request",
+    "monitoring",
+    "tracking"
+  ],
+  "dependencies": {
+    "reqwest": "^2.0.5"
+  }
+}
