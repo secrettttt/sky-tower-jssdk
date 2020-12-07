@@ -3,7 +3,7 @@ import { getCurrentPid, getCurrentUid } from '../constant/index';
 
 const emitReqEvent = (obj) => {
   reqwest({
-    url: "http://localhost:8765/emit/req_event",
+    url: "http://101.200.197.197:8765/emit/req_event",
     method: 'post',
     type: 'json',
     crossOrigin: true, /* 跨域请求 */
