@@ -1,4 +1,9 @@
 # SkyTower相关工具库（sky-tower-jssdk）代码仓库
+
+## 最新！第一版可用版本@1.0.0，安装方式：
+```js
+npm install skytower@1.0.0
+```
 ## 线上地址
 &#160; &#160; &#160; &#160;sky-tower线上地址：https://www.npmjs.com/package/sky-tower
 
