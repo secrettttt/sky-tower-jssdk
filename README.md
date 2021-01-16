@@ -28,12 +28,16 @@ npm install
   ...
 }
 ```
+- 全局安装rollup
+```js
+npm install --global rollup
+```
 - 使用rollup打包
 ```js
 rollup -c
 ```
 - 发布上线
-```
+```js
 npm publish --access=public
 ```
 
