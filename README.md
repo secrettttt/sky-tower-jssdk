@@ -19,6 +19,7 @@ npm install skytower@1.0.0
 ```
 npm install
 ```
+- clone下来的仓库依赖安装不成功？将package-lock.json删除再试试
 - src下coding，更新feature，更新readme，本地调试，自测通过
 - package.json下更新本次发布的版本号
 ```js
