@@ -1,8 +1,15 @@
 # SkyTower相关工具库（sky-tower-jssdk）代码仓库
 
-## 最新！第一版可用版本@1.0.0，安装方式：
+
+## 最新可用版本@2.0.0，安装方式：
+```js
+npm install skytower@2.0.0
+```
+- @2.0.0 新功能：该版本skytower已支持可记录项目的pv、uv信息
+## 第一版@1.0.0（该版本不支持上报用户访问记录！！！），安装方式：
 ```js
 npm install skytower@1.0.0
+- 该版本为skytower可用的第一版本，使用该版本的项目不会上报pv、uv信息。若有pv、uv数据上报需求，请安装最新版本
 ```
 ## 线上地址
 &#160; &#160; &#160; &#160;sky-tower线上地址：https://www.npmjs.com/package/sky-tower
