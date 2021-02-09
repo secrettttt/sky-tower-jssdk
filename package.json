@@ -1,6 +1,6 @@
 {
   "name": "sky-tower",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "It is skytower jssdk.",
   "main": "./src/index.js",
   "keywords": [
